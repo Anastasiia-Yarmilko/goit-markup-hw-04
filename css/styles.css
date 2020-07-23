@@ -148,12 +148,18 @@ img {
 }
 
 /* HERO */
-.hero {
-  background: url(../images/Hero-img.jpg);
+.hero-section {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Hero-img.jpg);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-section {
-  background-color: var(--text-light-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
