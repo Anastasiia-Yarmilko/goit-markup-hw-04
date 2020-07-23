@@ -85,8 +85,17 @@ img {
   padding-left: 0px;
 }
 
+.header-contacts-list-item {
+  display: flex;
+  align-items: center;
+}
+
 .header-contacts-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.header-address-icons-svg {
+  margin-right: 10px;
 }
 
 .header .container {
@@ -139,6 +148,10 @@ img {
 }
 
 /* HERO */
+.hero {
+  background: url(../images/Hero-img.jpg);
+}
+
 .hero-section {
   background-color: var(--text-light-background-color);
   padding-top: 200px;
