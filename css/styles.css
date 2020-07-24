@@ -80,24 +80,6 @@ img {
   margin-right: 85px;
 }
 
-.header-contacts-list {
-  display: flex;
-  padding-left: 0px;
-}
-
-.header-contacts-list-item {
-  display: flex;
-  align-items: center;
-}
-
-.header-contacts-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.header-address-icons-svg {
-  margin-right: 10px;
-}
-
 .header .container {
   display: flex;
   align-items: center;
@@ -117,6 +99,34 @@ img {
 }
 
 .logo-blue-word {
+  color: var(--accent-color);
+}
+
+.header-contacts-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.header-contacts-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-address-icons-svg {
+  margin-right: 10px;
+}
+
+.header-phone:hover .header-address-icons-svg {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.header-mail:hover .header-address-icons-svg {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
@@ -213,12 +223,18 @@ img {
   padding-bottom: 47px;
 }
 
+.benefits-item-svg {
+  width: 70px;
+  height: 70px;
+}
+
 .benefits-list-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -264,7 +280,10 @@ img {
 .operations .subtitle {
   text-align: center;
   color: var(--title-dark-background-color);
-  background-color: var(--text-light-background-color);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
   padding-top: 27px;
   padding-bottom: 27px;
   margin-bottom: 10px;
@@ -322,16 +341,34 @@ img {
   margin-bottom: 24px;
 }
 
-.team-address-list-item {
+.team-address-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-link {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 44px;
   width: 44px;
+  border-radius: 50%;
+  background-color: var(--text-dark-background-color);
 }
 
-.team-address-list-item:not(:last-child) {
-  margin-right: 10px;
+.team-social-icons {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-social-link:hover .team-social-icons,
+.team-social-link:focus .team-social-icons {
+  fill: var(--text-dark-background-color);
 }
 
 /* CLIENTS */
