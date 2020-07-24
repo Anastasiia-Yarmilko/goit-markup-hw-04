@@ -431,6 +431,27 @@ img {
   margin-right: 10px;
 }
 
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-dark-background-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
 .footer-street-address,
 .footer-mail,
 .footer-phone {
