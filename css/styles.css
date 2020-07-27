@@ -120,12 +120,14 @@ img {
   margin-right: 10px;
 }
 
-.header-phone:hover .header-address-icons-svg {
+.header-phone:hover .header-address-icons-svg,
+.header-phone:focus .header-address-icons-svg {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
 
-.header-mail:hover .header-address-icons-svg {
+.header-mail:hover .header-address-icons-svg,
+.header-mail:focus .header-address-icons-svg {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
@@ -387,12 +389,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  fill: #afb1b8;
+}
+
+.clients-list-item-link:hover,
+.clients-list-item-link:focus {
+  fill: var(--accent-color);
+  border: solid var(--accent-color);
 }
 
 .clients-list-item-link:hover,
@@ -550,6 +558,7 @@ img {
   margin-bottom: 30px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
+  overflow: hidden;
 }
 
 .portfolio-examples-list-item:hover,
